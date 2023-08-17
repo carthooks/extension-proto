@@ -12,11 +12,12 @@ message GetFieldsResponse {
 
 //message field to extend system field datatype. such as map, cad file, lbs locatin, etc.
 message CustomFieldType {
-  string name = 1;
-  StorageType type = 2;
-  Assets input_component = 3;
-  Assets setting_component = 4;
-  Assets show_component = 5;
+  string UUID = 1;
+  string name = 2;
+  StorageType type = 3;
+  Assets input_component = 6;
+  Assets setting_component = 7;
+  Assets show_component = 8;
 }
 
 enum StorageType {
