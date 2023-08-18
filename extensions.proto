@@ -12,6 +12,7 @@ import "connectors.proto";
 import "assets.proto";
 import "auths.proto";
 import "http.proto";
+import "app.proto";
 
 service CarthooksExtension {
   rpc Info(Empty) returns (InfoResponse) {}
@@ -22,6 +23,7 @@ service CarthooksExtension {
   rpc GetConnectors(Empty) returns (GetConnectorsResponse) {}
   rpc GetAssets(GetAssetsRequest) returns (GetAssetsResponse) {}
   rpc GetAuthMethods(Empty) returns (GetAuthMethodsResponse) {}
+  rpc GetApps(Empty) returns (GetAppsResponse) {}
   rpc AuthValidate(AuthValidateRequest) returns (AuthValidateResponse) {}
   rpc OnHttpRequest(HttpRequest) returns (HttpResponse) {}
 }
