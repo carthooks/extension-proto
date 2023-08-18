@@ -4,7 +4,7 @@ package service;
 import "common.proto";
 option go_package = "github.com/carthooks/extension/service";
 option java_multiple_files = true;
-option java_package = "proto.extension.carthooks.com";
+option java_package = "com.carthooks.extension.proto";
 
 message GetServicesResponse {
   repeated Service services = 1;

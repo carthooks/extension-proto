@@ -5,7 +5,7 @@ import "assets.proto";
 package service;
 option go_package = "github.com/carthooks/extension/service";
 option java_multiple_files = true;
-option java_package = "proto.extension.carthooks.com";
+option java_package = "com.carthooks.extension.proto";
 
 message GetConnectorsResponse{
     repeated Connector connectors = 1;

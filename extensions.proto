@@ -3,7 +3,7 @@ syntax = "proto3";
 package service;
 option go_package = "github.com/carthooks/extension/service";
 option java_multiple_files = true;
-option java_package = "proto.extension.carthooks.com";
+option java_package = "com.carthooks.extension.proto";
 
 import "fieldTypes.proto";
 import "models.proto";
@@ -11,7 +11,7 @@ import "services.proto";
 import "connectors.proto";
 import "assets.proto";
 import "auths.proto";
-import "http.proto";
+import "httpHandle.proto";
 import "app.proto";
 
 service CarthooksExtension {
