@@ -16,5 +16,19 @@ message Connector{
     I18nString name = 2;
     I18nString description = 3;
     Assets icon = 4;
-    repeated string service_UUID_list = 5;
+    Assets setupComponent = 5;
+    repeated string service_UUID_list = 7;
+}
+
+message CreateConnectionRequest{
+    int64 tenant_id = 1;
+    string connector_UUID = 2;
+    map<string, string> params = 3;
+}
+
+message CreateConnectionResponse{
+    bool success = 1;
+    string message = 2;    
+    string connection_id = 3;
+    string name = 4;
 }
