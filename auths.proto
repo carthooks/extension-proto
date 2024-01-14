@@ -16,6 +16,8 @@ message AuthMethod{
     string name = 2;
     string description = 3;
     Assets component = 4;
+    string configJson = 5;
+    string logoutScript = 6;
 }
 
 message AuthValidateRequest{

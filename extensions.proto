@@ -6,18 +6,15 @@ option java_multiple_files = true;
 option java_package = "com.carthooks.extension.proto";
 
 import "fieldTypes.proto";
-import "models.proto";
 import "services.proto";
 import "connectors.proto";
 import "assets.proto";
 import "auths.proto";
 import "httpHandle.proto";
-import "app.proto";
 
 service CarthooksExtension {
   rpc Info(Empty) returns (InfoResponse) {}
   rpc GetCustomFieldTypes(Empty) returns (GetFieldsResponse) {}
-  rpc GetModels(Empty) returns (GetModelsResponse) {}
   rpc GetI18nPack(Empty) returns (GetI18nPackResponse) {}
   rpc GetServices(Empty) returns (GetServicesResponse) {}
   
@@ -26,7 +23,6 @@ service CarthooksExtension {
 
   rpc GetAssets(GetAssetsRequest) returns (GetAssetsResponse) {}
   rpc GetAuthMethods(Empty) returns (GetAuthMethodsResponse) {}
-  rpc GetApps(Empty) returns (GetAppsResponse) {}
   rpc AuthValidate(AuthValidateRequest) returns (AuthValidateResponse) {}
   rpc OnHttpRequest(HttpRequest) returns (HttpResponse) {}
 }
